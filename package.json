@@ -1,6 +1,6 @@
 {
   "name": "unisort",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extension for sort() to include Non-Latin alphabets into the sort algorithm instead of listing each alphabet after one another.",
   "main": "index.js",
   "scripts": {
