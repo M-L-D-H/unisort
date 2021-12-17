@@ -20,17 +20,17 @@ describe('#unisort', () => {
     ]);
   });
 
-  it('should put احمد before Alfred and طارق after Doe', () => {
+  it('should put أَحْمَدٌ before Alfred and طارق after Doe', () => {
     const result = uniSort([
       'Alfred',
       'Ben',
       'طارق',
       'Doe',
-      'احمد',
+      'أَحْمَدٌ',
       'Yvonne',
     ]);
     expect(result).to.eql([
-      'احمد',
+      'أَحْمَدٌ',
       'Alfred',
       'Ben',
       'Doe',
