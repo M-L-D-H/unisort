@@ -1,4 +1,4 @@
-const [expect] = require('chai');
+const { expect } = require('chai');
 const uniSort = require('../index');
 
 // Test for Arabic
