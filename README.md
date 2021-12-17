@@ -13,8 +13,10 @@ A simple and expandable extension for JavaScript's sort() method to provide an i
 import uniSort from 'unisort';
 
 const alphabetUnsorted = ['A','B','ط','D','ا'];
+const namesUnsorted = ['Alfred', 'Ben', 'طارق', 'Daniel', 'احمد', 'Yvonne'];
 
-uniSort(alphabetUnsorted) // ['A','ا','B','D','ط']
+uniSort(alphabetUnsorted) // ['A', 'ا', 'B', 'D', 'ط']
+uniSort(namesUnsorted) // ['احمد', 'Alfred', 'Ben', 'Daniel', 'طارق', 'Yvonne']
 ```
 
 ## Test
