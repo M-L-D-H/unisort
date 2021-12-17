@@ -1,47 +1,47 @@
-'use strict';
-
 /**
  * @param {array}
  * @return {array}
  */
 
 const dictAra = {
-  ا: 'A',
+  ا: 'a',
   ع: 'ʿ',
-  ب: 'B',
-  د: 'D',
-  ض: 'D',
-  ظ: 'D',
-  ذ: 'D',
-  ت: 'T',
-  ث: 'T',
-  ط: 'T',
-  ز: 'Z',
-  ر: 'R',
-  س: 'S',
-  ش: 'S',
-  ص: 'S',
-  غ: 'G',
-  ج: 'G',
-  ف: 'F',
-  ق: 'Q',
-  ك: 'K',
-  ل: 'L',
-  م: 'M',
-  ن: 'N',
-  ه: 'H',
-  ح: 'H',
-  خ: 'H',
-  و: 'U',
-  ي: 'I',
+  ب: 'b',
+  د: 'd',
+  ض: 'd',
+  ظ: 'd',
+  ذ: 'd',
+  ت: 't',
+  ث: 't',
+  ط: 't',
+  ز: 'z',
+  ر: 'r',
+  س: 's',
+  ش: 's',
+  ص: 's',
+  غ: 'g',
+  ج: 'g',
+  ف: 'f',
+  ق: 'q',
+  ك: 'k',
+  ل: 'l',
+  م: 'm',
+  ن: 'n',
+  ه: 'h',
+  ح: 'h',
+  خ: 'h',
+  و: 'u',
+  ي: 'i',
 };
 
 module.exports = (array) => {
   array.sort((a, b) => {
-    const newA = (Object.keys(dictAra).includes(a)) ? dictAra[a] : a;
-    const newB = (Object.keys(dictAra).includes(b)) ? dictAra[b] : b;
-    if (newA > newB) return 1;
-    if (newA < newB) return -1;
+    // Arabic Charset
+    const newA = a.replace(/[\u0621-\u064A]/gi, (c) => dictAra[c]);
+    const newB = b.replace(/[\u0621-\u064A]/gi, (c) => dictAra[c]);
+
+    if (newA.toLowerCase() > newB.toLowerCase()) return 1;
+    if (newA.toLowerCase() < newB.toLowerCase()) return -1;
     return 0;
   });
   return array;
