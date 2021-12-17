@@ -35,7 +35,7 @@ const dictAra = {
   ي: 'I',
 };
 
-module.exports = (array) => {
+export default (array) => {
   array.sort((a, b) => {
     const newA = (Object.keys(dictAra).includes(a)) ? dictAra[a] : a;
     const newB = (Object.keys(dictAra).includes(b)) ? dictAra[b] : b;
