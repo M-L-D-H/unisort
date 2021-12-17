@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/439264830.svg)](https://zenodo.org/badge/latestdoi/439264830)
+
 uniSort
 =======
 
