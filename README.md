@@ -21,6 +21,11 @@ uniSort(alphabetUnsorted) // ['A', 'ا', 'B', 'D', 'ط']
 uniSort(namesUnsorted) // ['احمد', 'Alfred', 'Ben', 'Daniel', 'طارق', 'Yvonne']
 ```
 
+## Supported Languages
+
+- Arabic
+- Hebrew
+
 ## Test
 
 `npm test`
