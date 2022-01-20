@@ -22,8 +22,10 @@ uniSort(namesUnsorted) // ['احمد', 'Alfred', 'Ben', 'Daniel', 'طارق', 'Y
 ```
 
 ## Supported Languages
-
+1.0.0
 - Arabic
+
+1.1.0
 - Hebrew
 
 ## Test
