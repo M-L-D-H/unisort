@@ -1,5 +1,7 @@
 [![DOI](https://zenodo.org/badge/439264830.svg)](https://zenodo.org/badge/latestdoi/439264830)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/Naereen/StrapDown.js)
+
 
 uniSort
 =======
